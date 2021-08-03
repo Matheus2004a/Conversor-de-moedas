@@ -13,7 +13,6 @@ body{
     display: grid;
     justify-content: center;
     margin: 5% auto;
-    border-radius: 20px;
 }
 
 header{

@@ -1,8 +1,8 @@
 var select = document.getElementById("select-moedas")
-var inputValorConverte = document.getElementById("input-valor")
+//var inputValorConverte = document.getElementById("input-valor")
 var botaoConverte = document.getElementById("botao-converte")
 
-/* Função assíncrona, pois deixa de executar o código e busca uma informação em um servidor */
+// Função assíncrona, pois deixa de executar o código e busca uma informação em um servidor
 async function converterMoedas() {
     // Await: Espera o servidor responder. Quando o servidor responder as informações são passadas ao parâmetro respostaConversaoURL em formato json e por fim retornamos elas à variável moedas
     var moedas = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL").then(function (respostaConversaoURL) {
@@ -51,13 +51,13 @@ function trocaMoedas() {
 }
 
 // Ao digitar um valor desejado no campo para converter que não seja número, exibe uma mensagem de erro
-function mensagemErro(){
+/*function mensagemErro(){
     if(inputValorConverte.value != Number(inputValorConverte)){
         alert("Digite apenas números")
     }
-}
+}*/
 
 botaoConverte.addEventListener("click", converterMoedas) // Evento que ouve o click do botão de converter
 select.addEventListener("change", trocaMoedas) // Evento que ouve a troca do select dos tipos de valores: Dólar e Euro
-inputValorConverte.addEventListener("keydown", mensagemErro)
-inputValorConverte.addEventListener("change", mensagemErro)
+//inputValorConverte.addEventListener("keydown", mensagemErro)
+//inputValorConverte.addEventListener("change", mensagemErro)
