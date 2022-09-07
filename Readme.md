@@ -1,5 +1,7 @@
 ## Conversor de moedas
 
+<img src="./design/conversor-img.png">
+
 Neste projeto crio um conversor de moedas sendo entre os tipos de valores dólar, euro e real. Mas não apenas isso, também é utilizado uma API de Cotações de Moedas, onde conseguimos obter o valor em real do dólar e do euro em tempo real a cada 30 segundos!! Segundo o site: https://docs.awesomeapi.com.br/api-de-moedas.
 Incrível não é mesmo???🙃🤗
 
